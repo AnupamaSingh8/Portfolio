@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anupama Singh | CS & AI Student | Portfolio</title>
+  <meta name="description" content="Portfolio of Anupama Singh - 18-year-old B.Tech in CS & AI student at Newton School of Technology (RU Campus), passionate about Python, Artificial Intelligence, Badminton & Basketball.">
+  <meta name="keywords" content="Anupama Singh, Portfolio, CS, AI, Python, Newton School of Technology, Rishihood University, Woodland Academy, Badminton, 3D Portfolio">
+  <meta name="author" content="Anupama Singh">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%238b5cf6'/><stop offset='50%' stop-color='%2306b6d4'/><stop offset='100%' stop-color='%23ec4899'/></linearGradient></defs><circle cx='50' cy='50' r='46' fill='%230a0d1e' stroke='url(%23g)' stroke-width='6'/><text x='50%' y='56%' font-size='38' font-weight='900' fill='url(%23g)' text-anchor='middle' dominant-baseline='middle' font-family='sans-serif'>AS</text></svg>">
+</head>
+<body data-theme="violet-glow">
+
+  <!-- Colorful Ambient Aurora Light Orbs (Background Glow) -->
+  <div class="aurora-container" aria-hidden="true">
+    <div class="aurora-orb orb-1"></div>
+    <div class="aurora-orb orb-2"></div>
+    <div class="aurora-orb orb-3"></div>
+    <div class="aurora-orb orb-4"></div>
+    <div class="aurora-grid"></div>
+  </div>
+
+  <!-- Custom Glowing Cursor -->
+  <div class="custom-cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-trail" id="cursor-trail" aria-hidden="true"></div>
+
+  <!-- Audio & Theme Floating Controller -->
+  <aside class="floating-controls" aria-label="Experience controls">
+    <button id="theme-toggle-btn" class="ctrl-btn" title="Cycle Color Theme" aria-label="Change color theme">
+      <i class="fa-solid fa-palette"></i>
+      <span class="ctrl-tooltip">Theme: <strong id="theme-name">Violet Glow</strong></span>
+    </button>
+    <button id="audio-toggle-btn" class="ctrl-btn" title="Toggle Sound FX" aria-label="Toggle subtle sound effects">
+      <i class="fa-solid fa-volume-high" id="audio-icon"></i>
+      <span class="ctrl-tooltip">Sound Effects: <strong id="audio-status">ON</strong></span>
+    </button>
+    <button id="reset-cam-btn" class="ctrl-btn" title="Reset 3D Scene View" aria-label="Reset 3D camera">
+      <i class="fa-solid fa-cube"></i>
+      <span class="ctrl-tooltip">Reset 3D View</span>
+    </button>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <header class="glass-navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Anupama Singh Home">
+        <span class="logo-badge">AS</span>
+        <span class="logo-text">Anupama<span class="gradient-text">.Singh</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#academics" class="nav-link">Journey</a>
+        <a href="#passions" class="nav-link">Passions</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link nav-cta">Let's Connect</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-glow">Hire / Connect</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-split container">
+        
+        <!-- Left: Text & Bio Highlights -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span class="status-text">18 y/o &bull; CS & AI Undergrad &bull; Lifelong Learner</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I am <br>
+            <span class="gradient-title">Anupama Singh</span>
+          </h1>
+
+          <div class="hero-typed-wrapper">
+            <span class="typed-prefix">I am a </span>
+            <span class="typed-text" id="typed-text">B.Tech in CS & AI Student</span>
+            <span class="cursor-blink">|</span>
+          </div>
+
+          <p class="hero-description">
+            From <strong>Uttar Pradesh, India</strong>, pursuing my <strong>B.Tech in Computer Science & Artificial Intelligence</strong> at <strong>Newton School of Technology (RU Campus)</strong>. Blending the deep analytical focus of an ambivert with the energetic agility of badminton and basketball to create intelligent technology.
+          </p>
+
+          <!-- Quick Stat Chips -->
+          <div class="hero-chips">
+            <div class="hero-chip">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>NST - RU Campus</span>
+            </div>
+            <div class="hero-chip">
+              <i class="fa-brands fa-python"></i>
+              <span>Python & AI Learner</span>
+            </div>
+            <div class="hero-chip">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Uttar Pradesh</span>
+            </div>
+            <div class="hero-chip">
+              <i class="fa-solid fa-medal"></i>
+              <span>Woodland Academy Alum</span>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-glow">
+              <span>Explore My Work</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#passions" class="btn btn-secondary">
+              <i class="fa-solid fa-basketball"></i>
+              <span>3D Sports & Passions</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- 3D Scene Controls Hint -->
+          <div class="scene-hint">
+            <i class="fa-solid fa-hand-pointer"></i>
+            <span>Interactive 3D: Click & drag to rotate the core, scroll to zoom, move cursor for particle field parallax</span>
+          </div>
+        </div>
+
+        <!-- Right: 3D Interactive Canvas Scene -->
+        <div class="hero-visual">
+          <div class="canvas-3d-wrapper" id="hero-3d-container">
+            <canvas id="hero-3d-canvas"></canvas>
+            
+            <!-- Glassmorphic floating badges over 3D scene -->
+            <div class="floating-badge badge-top-right tilt-card" data-tilt>
+              <div class="badge-icon"><i class="fa-brands fa-python"></i></div>
+              <div class="badge-info">
+                <span class="badge-label">Focus Area</span>
+                <span class="badge-value">Python & AI</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left tilt-card" data-tilt>
+              <div class="badge-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div class="badge-info">
+                <span class="badge-label">Mindset</span>
+                <span class="badge-value">Ambivert Agility</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right tilt-card" data-tilt>
+              <div class="badge-icon"><i class="fa-solid fa-feather"></i></div>
+              <div class="badge-info">
+                <span class="badge-label">Sports</span>
+                <span class="badge-value">Badminton & Ball</span>
+              </div>
+            </div>
+
+            <!-- 3D Interactive Preset Buttons inside Canvas -->
+            <div class="canvas-controls-overlay">
+              <button class="scene-chip active" data-shape="torus">Quantum Core</button>
+              <button class="scene-chip" data-shape="icosahedron">AI Crystal</button>
+              <button class="scene-chip" data-shape="galaxy">Nebula Sphere</button>
+              <button class="scene-chip" id="pulse-btn" title="Send Shockwave"><i class="fa-solid fa-wave-square"></i> Pulse</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll down">
+        <div class="mouse-icon">
+          <div class="wheel"></div>
+        </div>
+        <span>Explore Journey</span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Who is <span class="gradient-text">Anupama Singh?</span></h2>
+          <p class="section-subtitle">
+            An 18-year-old developer & AI enthusiast blending analytical problem solving with curiosity, continuous learning, and active athleticism.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Narrative Card -->
+          <div class="glass-card about-story-card tilt-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="about-icon-header">
+              <div class="icon-circle">
+                <i class="fa-solid fa-user-astronaut"></i>
+              </div>
+              <div>
+                <h3 class="card-title">Curious Learner & Problem Solver</h3>
+                <span class="card-sub">Uttar Pradesh &bull; 18 Years Old &bull; Ambivert</span>
+              </div>
+            </div>
+
+            <div class="about-body">
+              <p>
+                Hello! I'm <strong>Anupama Singh</strong>, born and raised in <strong>Uttar Pradesh, India</strong>. I completed my foundational schooling at <strong>Woodland Academy</strong>, where I developed my fascination with mathematics, science, and the power of computational logic.
+              </p>
+              <p>
+                Currently, I am 18 years old and pursuing my <strong>B.Tech in Computer Science & Artificial Intelligence</strong> at the forward-thinking <strong>Newton School of Technology - Rishihood University Campus</strong>.
+              </p>
+              <p>
+                As an <strong>ambivert</strong>, I cherish the dual superpower: intense, peaceful focus when architecting code or exploring neural concepts, coupled with energetic collaboration, active communication, and sportsmanship on the court.
+              </p>
+            </div>
+
+            <div class="about-highlight-stats">
+              <div class="stat-box">
+                <span class="stat-number">18</span>
+                <span class="stat-label">Years of Age</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">NST-RU</span>
+                <span class="stat-label">B.Tech CS & AI</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Favorite Sports</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">&infin;</span>
+                <span class="stat-label">Desire to Learn</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Trait & Identity Cards -->
+          <div class="about-traits-stack">
+            
+            <!-- Trait 1: Ambivert Energy -->
+            <div class="glass-card trait-card tilt-card" data-tilt>
+              <div class="card-glow"></div>
+              <div class="trait-icon gradient-icon-1">
+                <i class="fa-solid fa-yin-yang"></i>
+              </div>
+              <div class="trait-content">
+                <h4>The Ambivert Superpower</h4>
+                <p>Equally at home diving into solitary, deep Python programming sessions as I am working with peers on ambitious tech projects and playing team basketball.</p>
+              </div>
+            </div>
+
+            <!-- Trait 2: Sports & Athleticism -->
+            <div class="glass-card trait-card tilt-card" data-tilt>
+              <div class="card-glow"></div>
+              <div class="trait-icon gradient-icon-2">
+                <i class="fa-solid fa-medal"></i>
+              </div>
+              <div class="trait-content">
+                <h4>Badminton & Basketball</h4>
+                <p>Badminton teaches me lightning-fast reflexes and precision; Basketball instills endurance, teamwork, and split-second tactical spatial strategy.</p>
+              </div>
+            </div>
+
+            <!-- Trait 3: The Hunger to Learn -->
+            <div class="glass-card trait-card tilt-card" data-tilt>
+              <div class="card-glow"></div>
+              <div class="trait-icon gradient-icon-3">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <div class="trait-content">
+                <h4>Continuous Evolution</h4>
+                <p>Every single day is an opportunity to learn a new Python library, master an algorithmic concept, or explore the frontier of Artificial Intelligence.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS & TECH SECTION ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Horizon</span>
+          <h2 class="section-title">Skills & <span class="gradient-text">What I'm Learning</span></h2>
+          <p class="section-subtitle">
+            A growing toolkit of programming languages, modern frameworks, data structures, and foundational AI tools.
+          </p>
+        </div>
+
+        <!-- 3D Interactive Skill Matrix -->
+        <div class="skills-grid">
+          
+          <!-- Category 1: Languages & AI -->
+          <div class="glass-card skill-category-card tilt-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="skill-cat-header">
+              <div class="cat-icon-wrap cat-color-purple">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div>
+                <h3>Programming & AI</h3>
+                <p>Core development & algorithms</p>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-python text-python"></i> Python (Primary Focus)</span>
+                  <span class="skill-pct">Active Learning</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-purple" style="width: 85%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-brain text-ai"></i> AI & ML Foundations</span>
+                  <span class="skill-pct">Exploring</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-cyan" style="width: 70%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-diagram-project text-algo"></i> Data Structures & Algorithms</span>
+                  <span class="skill-pct">Practicing</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-pink" style="width: 75%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-code text-c"></i> C / C++ Fundamentals</span>
+                  <span class="skill-pct">Foundational</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-amber" style="width: 65%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Web & Modern Technologies -->
+          <div class="glass-card skill-category-card tilt-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="skill-cat-header">
+              <div class="cat-icon-wrap cat-color-cyan">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <div>
+                <h3>Web & Interactive Tech</h3>
+                <p>Interactive interfaces & frontends</p>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-html5 text-html"></i> HTML5 & Semantic Web</span>
+                  <span class="skill-pct">Proficient</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-cyan" style="width: 88%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-css3-alt text-css"></i> CSS3, Grid & 3D Transforms</span>
+                  <span class="skill-pct">Proficient</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-purple" style="width: 82%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-js text-js"></i> JavaScript & DOM</span>
+                  <span class="skill-pct">Intermediate</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-amber" style="width: 72%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-cubes text-3d"></i> WebGL & 3D Interactive (Three.js)</span>
+                  <span class="skill-pct">Enthusiast</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-pink" style="width: 68%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Developer Tools & Workflows -->
+          <div class="glass-card skill-category-card tilt-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="skill-cat-header">
+              <div class="cat-icon-wrap cat-color-emerald">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <div>
+                <h3>Tools & Environment</h3>
+                <p>Productivity & engineering setup</p>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-git-alt text-git"></i> Git & GitHub</span>
+                  <span class="skill-pct">Version Control</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-emerald" style="width: 80%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-terminal text-cli"></i> VS Code & Terminal</span>
+                  <span class="skill-pct">Daily Driver</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-purple" style="width: 85%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-book-bookmark text-jupyter"></i> Jupyter Notebooks</span>
+                  <span class="skill-pct">Data & Experiments</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-amber" style="width: 75%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-lightbulb text-logic"></i> Problem Solving & Logic</span>
+                  <span class="skill-pct">Continuous</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill fill-cyan" style="width: 90%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Floating Tech Pills -->
+        <div class="tech-pills-container">
+          <span class="tech-pill"><i class="fa-brands fa-python"></i> Python 3</span>
+          <span class="tech-pill"><i class="fa-solid fa-brain"></i> Neural Networks</span>
+          <span class="tech-pill"><i class="fa-solid fa-laptop-code"></i> Newton School of Tech</span>
+          <span class="tech-pill"><i class="fa-solid fa-cube"></i> Three.js 3D</span>
+          <span class="tech-pill"><i class="fa-solid fa-chart-line"></i> NumPy & Pandas</span>
+          <span class="tech-pill"><i class="fa-brands fa-github"></i> Open Source</span>
+          <span class="tech-pill"><i class="fa-solid fa-feather"></i> Badminton Agility</span>
+          <span class="tech-pill"><i class="fa-solid fa-basketball"></i> Basketball Strategy</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACADEMIC JOURNEY SECTION ==================== -->
+    <section class="section journey-section" id="academics">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Education Roadmap</span>
+          <h2 class="section-title">My Academic <span class="gradient-text">Journey</span></h2>
+          <p class="section-subtitle">
+            From strong foundations at Woodland Academy to cutting-edge CS & Artificial Intelligence at Newton School of Technology.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Timeline Item 1: Newton School of Technology -->
+          <div class="timeline-item timeline-active">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content glass-card tilt-card" data-tilt>
+              <div class="card-glow"></div>
+              <div class="timeline-badge-row">
+                <span class="badge-present">Current &bull; Undergraduate</span>
+                <span class="timeline-date">2025 – Present</span>
+              </div>
+              <h3 class="timeline-degree">B.Tech in Computer Science & Artificial Intelligence</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-building-columns"></i> Newton School of Technology &bull; Rishihood University (RU Campus)
+              </h4>
+              <p class="timeline-desc">
+                Engaged in a high-intensity, practical-first engineering program specializing in Artificial Intelligence, machine learning foundations, algorithms, system design, and software craftsmanship. Collaborating with mentors and ambitious peers to build real-world software.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">Artificial Intelligence</span>
+                <span class="mini-tag">Python Architecture</span>
+                <span class="mini-tag">Data Structures</span>
+                <span class="mini-tag">NST - RU Campus</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Woodland Academy -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-content glass-card tilt-card" data-tilt>
+              <div class="card-glow"></div>
+              <div class="timeline-badge-row">
+                <span class="badge-completed">Completed</span>
+                <span class="timeline-date">Foundational Years</span>
+              </div>
+              <h3 class="timeline-degree">High School & Intermediate Education</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-school-flag"></i> Woodland Academy
+              </h4>
+              <p class="timeline-desc">
+                Graduated with distinction, cultivating a strong command of mathematics, science, and computer fundamentals. Active in sports competitions (Badminton, Basketball) and academic science exhibitions that sparked my lifelong curiosity for technology.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">Science & Mathematics</span>
+                <span class="mini-tag">Sports Captaincy</span>
+                <span class="mini-tag">Woodland Academy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: The Uttar Pradesh Roots -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <div class="timeline-content glass-card tilt-card" data-tilt>
+              <div class="card-glow"></div>
+              <div class="timeline-badge-row">
+                <span class="badge-roots">Roots & Identity</span>
+                <span class="timeline-date">Uttar Pradesh, India</span>
+              </div>
+              <h3 class="timeline-degree">Cultural Roots & Ambivert Mindset</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-location-dot"></i> Born and Raised in Uttar Pradesh
+              </h4>
+              <p class="timeline-desc">
+                Grounded in the vibrant culture, resilience, and hardworking ethos of Uttar Pradesh. Formed my identity as an ambivert who loves quiet intellectual exploration and high-energy collaborative team pursuits.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PASSIONS & 3D SPORTS SECTION ==================== -->
+    <section class="section passions-section" id="passions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Energy & Balance</span>
+          <h2 class="section-title">Beyond Code: <span class="gradient-text">Sports & 3D Arena</span></h2>
+          <p class="section-subtitle">
+            Playing sports fuels my engineering mindset. Interact with the 3D sports models below to see how Badminton and Basketball sharpen my coding instincts.
+          </p>
+        </div>
+
+        <div class="passions-interactive-wrapper glass-card">
+          <div class="passions-split">
+            
+            <!-- Left: Description & Sport Toggle -->
+            <div class="passions-info">
+              <div class="sports-toggle-bar">
+                <button class="sport-btn active" id="sport-badminton-btn" data-sport="badminton">
+                  <i class="fa-solid fa-feather"></i>
+                  <span>Badminton Shuttlecock</span>
+                </button>
+                <button class="sport-btn" id="sport-basketball-btn" data-sport="basketball">
+                  <i class="fa-solid fa-basketball"></i>
+                  <span>Basketball Arena</span>
+                </button>
+              </div>
+
+              <!-- Dynamic Sport Content: Badminton -->
+              <div class="sport-card-content" id="sport-badminton-content">
+                <div class="sport-header-row">
+                  <span class="sport-pill pill-violet">Reflexes &bull; Precision &bull; Speed</span>
+                  <span class="sport-status">Lifelong Passion</span>
+                </div>
+                <h3 class="sport-title">Badminton: The Art of Instant Calculation</h3>
+                <p class="sport-text">
+                  Badminton is chess played at 200 mph. It demands anticipating the opponent's smash, rapid positioning, and surgical wrist control. In programming, it gives me the mindset to debug fast, think several moves ahead, and pivot calmly under pressure.
+                </p>
+                <div class="sport-stat-row">
+                  <div class="sport-stat">
+                    <strong>High</strong>
+                    <span>Reaction Speed</span>
+                  </div>
+                  <div class="sport-stat">
+                    <strong>Pinpoint</strong>
+                    <span>Smash Precision</span>
+                  </div>
+                  <div class="sport-stat">
+                    <strong>Mental</strong>
+                    <span>Sharp Focus</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dynamic Sport Content: Basketball -->
+              <div class="sport-card-content hidden" id="sport-basketball-content">
+                <div class="sport-header-row">
+                  <span class="sport-pill pill-amber">Team Synergy &bull; Spatial IQ &bull; Endurance</span>
+                  <span class="sport-status">Active Learning</span>
+                </div>
+                <h3 class="sport-title">Basketball: Spatial Strategy & Rhythm</h3>
+                <p class="sport-text">
+                  Basketball is all about team communication, geometry on the hardwood court, and relentless stamina. Translates directly into software engineering: effective git branch collaboration, unselfish passing of ideas, and sinking the shot at the buzzer!
+                </p>
+                <div class="sport-stat-row">
+                  <div class="sport-stat">
+                    <strong>Full Court</strong>
+                    <span>Vision & IQ</span>
+                  </div>
+                  <div class="sport-stat">
+                    <strong>Seamless</strong>
+                    <span>Team Passing</span>
+                  </div>
+                  <div class="sport-stat">
+                    <strong>Grit</strong>
+                    <span>4th Quarter Energy</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sport-instructions">
+                <i class="fa-solid fa-arrows-spin"></i>
+                <span>Use mouse/finger to freely orbit and inspect the 3D model in real time!</span>
+              </div>
+            </div>
+
+            <!-- Right: 3D Interactive Sports Canvas -->
+            <div class="passions-3d-viewport">
+              <canvas id="sports-3d-canvas"></canvas>
+              
+              <!-- 3D Viewport Controls -->
+              <div class="viewport-hud">
+                <span class="hud-label" id="hud-model-name">3D Shuttlecock (Live WebGL)</span>
+                <div class="hud-actions">
+                  <button id="spin-sport-btn" class="hud-btn" title="Toggle Auto Spin"><i class="fa-solid fa-rotate"></i> Spin</button>
+                  <button id="wireframe-sport-btn" class="hud-btn" title="Toggle Wireframe"><i class="fa-solid fa-border-all"></i> Wireframe</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS & EXPLORATIONS SECTION ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Creations & Lab</span>
+          <h2 class="section-title">Projects & <span class="gradient-text">Explorations</span></h2>
+          <p class="section-subtitle">
+            A showcase of software projects, Python utilities, and intelligent algorithms I'm building and experimenting with.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: AI Assistant & NLP Explorer -->
+          <div class="glass-card project-card tilt-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-banner project-banner-ai">
+              <div class="project-banner-badge">Python &bull; AI</div>
+              <div class="banner-3d-icon"><i class="fa-solid fa-robot"></i></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">PyIntelligence: AI Assistant Prototype</h3>
+              <p class="project-description">
+                A Python-powered conversational assistant prototype exploring natural language understanding, automated query resolution, and student productivity workflows for CS learners.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>NLP Concepts</span>
+                <span>API Architecture</span>
+                <span>Prompt Logic</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="proj-link"><i class="fa-brands fa-github"></i> Code Repository</a>
+                <a href="#contact" class="proj-link proj-highlight"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Smart AlgoVisualizer -->
+          <div class="glass-card project-card tilt-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-banner project-banner-algo">
+              <div class="project-banner-badge">Algorithms</div>
+              <div class="banner-3d-icon"><i class="fa-solid fa-network-wired"></i></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Smart AlgoVisualizer 3D</h3>
+              <p class="project-description">
+                Interactive visualizer demonstrating core Data Structures and Sorting Algorithms (Merge, Quick, Dijkstra's pathfinding) with real-time step execution and time-complexity insights.
+              </p>
+              <div class="project-tags">
+                <span>Data Structures</span>
+                <span>Python</span>
+                <span>JavaScript</span>
+                <span>Algorithms</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="proj-link"><i class="fa-brands fa-github"></i> Code Repository</a>
+                <a href="#contact" class="proj-link proj-highlight"><i class="fa-solid fa-arrow-up-right-from-square"></i> Preview</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: AthletiX Performance Tracker -->
+          <div class="glass-card project-card tilt-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-banner project-banner-sports">
+              <div class="project-banner-badge">Sports Analytics</div>
+              <div class="banner-3d-icon"><i class="fa-solid fa-volleyball"></i></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">AthletiX: Badminton & Sports Tracker</h3>
+              <p class="project-description">
+                A data-driven tracking application designed to log badminton rally metrics, basketball shooting efficiency, cardiovascular stamina, and tournament progress using Python analytics.
+              </p>
+              <div class="project-tags">
+                <span>Python Analytics</span>
+                <span>Data Visualization</span>
+                <span>Sports Science</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="proj-link"><i class="fa-brands fa-github"></i> Code Repository</a>
+                <a href="#contact" class="proj-link proj-highlight"><i class="fa-solid fa-arrow-up-right-from-square"></i> Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Interactive 3D Portfolio Platform -->
+          <div class="glass-card project-card tilt-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-banner project-banner-portfolio">
+              <div class="project-banner-badge">Featured</div>
+              <div class="banner-3d-icon"><i class="fa-solid fa-cubes"></i></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Dynamic 3D Celestial Portfolio</h3>
+              <p class="project-description">
+                This custom portfolio built with WebGL / Three.js 3D physics particles, iridescent glassmorphism, responsive tilt mechanics, sound synthesizer, and live color customization.
+              </p>
+              <div class="project-tags">
+                <span>Three.js</span>
+                <span>WebGL</span>
+                <span>CSS3 Aurora</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#hero" class="proj-link"><i class="fa-solid fa-rotate-left"></i> Experience Again</a>
+                <a href="#contact" class="proj-link proj-highlight"><i class="fa-solid fa-star"></i> Featured</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Connect & <span class="gradient-text">Collaborate</span></h2>
+          <p class="section-subtitle">
+            Whether you want to discuss Artificial Intelligence, Python projects, B.Tech opportunities, or play a match of Badminton — my inbox is always open!
+          </p>
+        </div>
+
+        <div class="contact-split">
+          
+          <!-- Left: Contact Details & Info Cards -->
+          <div class="contact-info-column">
+            
+            <div class="glass-card contact-card tilt-card" data-tilt>
+              <div class="card-glow"></div>
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:anupama.singh@example.com" class="contact-value" id="email-link">anupama.singh@example.com</a>
+              </div>
+              <button class="copy-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="glass-card contact-card tilt-card" data-tilt>
+              <div class="card-glow"></div>
+              <div class="contact-icon">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Campus & Location</span>
+                <span class="contact-value">Newton School of Tech &bull; RU Campus &bull; UP, India</span>
+              </div>
+            </div>
+
+            <div class="glass-card contact-card tilt-card" data-tilt>
+              <div class="card-glow"></div>
+              <div class="contact-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Response Time</span>
+                <span class="contact-value">Usually within 24 hours</span>
+              </div>
+            </div>
+
+            <!-- Social Links Pill Row -->
+            <div class="social-links-row">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:anupama.singh@example.com" class="social-circle" aria-label="Send direct email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="Twitter Profile">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Contact Message Form -->
+          <div class="glass-card contact-form-card">
+            <div class="card-glow"></div>
+            <h3 class="form-title">Send a Quick Message</h3>
+            <p class="form-sub">Fill out the quick form below and it will prepare your message right away.</p>
+
+            <form id="contact-form" class="contact-form" onsubmit="return false;">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="form-name" placeholder="e.g. John Doe" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" id="form-email" placeholder="e.g. john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-tag"></i>
+                  <input type="text" id="form-subject" placeholder="Collaboration / Inquiry / Badminton Match" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <div class="input-wrap textarea-wrap">
+                  <i class="fa-regular fa-comment-dots"></i>
+                  <textarea id="form-message" rows="4" placeholder="Hello Anupama, I saw your 3D portfolio..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" id="send-msg-btn" class="btn btn-primary btn-glow btn-block">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="glass-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="logo-badge">AS</span>
+        <span>Anupama Singh &bull; Crafted with 3D WebGL, passion, and code.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Three.js (CDN with fallback script handled in three-scene.js) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- OrbitControls (Three.js addon) -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <!-- Custom Scripts -->
+  <script src="three-scene.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+
